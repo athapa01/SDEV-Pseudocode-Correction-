@@ -1,0 +1,40 @@
+Question: You have been tasked with reviewing and updating this program. What steps would you take to identify any issues in the code?
+Ans: First I would carefully read the pseudocode from the starting to understand what the program is telling me to do. Then I would check the declarations section to make sure all variables are spelled correctly and they are used consistently in the entire program when needed. 
+After that, I would review each line of the code step by step to look for errors such as missing input statements, incorrect calculations, spelling mistakes in code. I would also check the while loop and condtitional statements in detail to make sure the logic will work correctly. 
+And finally, I would test the program with sample values to see if the output is correct. If the results are not correct as we expected, I would go back and try to fix the errors in the code until and unless program start working properly.
+
+Question: What actions could the developer have taken to minimize the number of errors?
+Ans: The developer can reduce the errors by carefully plainning the program before writing the pseudocode. After that, they can review the code line by line and make sure that all the variables are declared and used correctly.
+Alos, another thing is testing program with sample inputs during the development to look mistakes early. And using consistent variables names and proper formatting would also help make the program easier to read and debug if necessary. 
+
+Now, corrected Pseudocode - 01:
+start
+
+   Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+
+   output "Enter first score or 0 to quit"
+   input firstTest
+
+   while firstTest <> 0
+      output "Enter second score"
+      input secondTest
+
+      average = (firstTest + secondTest) / 2
+
+      output "Average is ", average
+
+      if average >= PASSING then
+         output "Pass"
+      else
+         output "Fail"
+      endif
+
+      output "Enter first score or 0 to quit"
+      input firstTest
+   endwhile
+
+stop
